@@ -27,8 +27,12 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# Forms made simple
+gem 'simple_form', '~> 3.5', '>= 3.5.1'
+# Styles with bootstrap
+gem 'bootstrap', '~> 4.0'
+# Jquery
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

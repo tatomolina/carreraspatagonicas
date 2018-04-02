@@ -1,0 +1,16 @@
+<h1>Races</h1>
+
+<table>
+  <thead>
+    <th>Nombre</th>
+    <th>Fecha</th>
+  </thead>
+  <tbody>
+    <% @races.each do |race| %>
+      <tr>
+        <td> <%= race.name %> </td>
+        <td> <%= race.due_date %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

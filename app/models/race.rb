@@ -1,8 +1,7 @@
-class Race
-  attr_accessor :date
+class Race < ActiveRecord::Base
 
   def done?
-    date > Date.today
+    due_date > Date.today
   end
 
 end
