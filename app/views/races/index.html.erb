@@ -1,16 +1,24 @@
-<h1>Races</h1>
+<%= render 'header' %>
 
-<table>
-  <thead>
-    <th>Nombre</th>
-    <th>Fecha</th>
-  </thead>
-  <tbody>
-    <% @races.each do |race| %>
-      <tr>
-        <td> <%= race.name %> </td>
-        <td> <%= race.due_date %> </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="container">
+
+      <h1 class="my-4">Upcoming Races</h1>
+
+      <div class="row">
+        <% @races.each do |race| %>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <%= link_to race.name, race %>
+                </h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!
+                  <%= race.due_date %>
+                </p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>

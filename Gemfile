@@ -33,6 +33,8 @@ gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'bootstrap', '~> 4.0'
 # Jquery
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+# Authentication
+gem 'devise', '~> 4.4', '>= 4.4.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
