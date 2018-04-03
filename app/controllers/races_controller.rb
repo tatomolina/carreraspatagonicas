@@ -5,6 +5,10 @@ class RacesController < ApplicationController
     authorize Race
   end
 
+  def show
+    @race = Race.find(params[:id])
+  end
+
   def new
     @race = Race.new
     authorize @race
