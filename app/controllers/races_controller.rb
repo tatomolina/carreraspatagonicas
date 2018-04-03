@@ -2,14 +2,17 @@ class RacesController < ApplicationController
 
   def index
     @races = Race.all
+    authorize Race
   end
 
   def new
     @race = Race.new
+    authorize @race
   end
 
   def create
     @race = Race.new(race_params)
+    authorize @race
 
     if @race.save
       flash[:notice] = "Race created succesfully"
@@ -26,10 +29,12 @@ class RacesController < ApplicationController
 
   def edit
     @race = Race.find(params[:id])
+    authorize @race
   end
 
   def update
     @race = Race.find(params[:id])
+    authorize @race
 
     if @race.update(race_params)
       flash[:notice] = "Race updated succesfully"
@@ -46,6 +51,7 @@ class RacesController < ApplicationController
 
   def destroy
     @race = Race.find(params[:id])
+    authorize @race
     @race.destroy
 
     redirect_to orders_path

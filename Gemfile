@@ -35,7 +35,12 @@ gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Authentication
 gem 'devise', '~> 4.4', '>= 4.4.3'
-
+# Administration suite
+gem 'rails_admin', '~> 1.3'
+# Roles managment
+gem 'rolify', '~> 5.2'
+# Authorization
+gem 'pundit', '~> 1.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

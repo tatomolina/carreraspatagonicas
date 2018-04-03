@@ -1,3 +1,10 @@
+<% if user_signed_in? %>
+  <% if current_user.has_role? :admin %>
+    <li class="nav-item">
+      <%= link_to "Admin", rails_admin_path, class: "nav-link" %>
+    </li>
+  <% end %>
+<% end %>
 <li class="nav-item">
   <%= link_to 'Races', races_path, class: "nav-link" %>
 </li>
