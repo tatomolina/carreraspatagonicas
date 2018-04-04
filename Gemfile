@@ -41,6 +41,8 @@ gem 'rails_admin', '~> 1.3'
 gem 'rolify', '~> 5.2'
 # Authorization
 gem 'pundit', '~> 1.1'
+# Pagination
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

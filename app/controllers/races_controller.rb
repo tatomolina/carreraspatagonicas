@@ -1,7 +1,7 @@
 class RacesController < ApplicationController
 
   def index
-    @races = Race.all
+    @races = Race.where("due_date > :today", {today: Date.today}).page(params[:page]).per(6)
     authorize Race
   end
 
